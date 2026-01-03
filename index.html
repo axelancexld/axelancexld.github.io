@@ -369,6 +369,17 @@
             border: 1px solid rgba(138, 43, 226, 0.3);
         }
 
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
         .gallery-item::after {
             content: 'View Screenshot';
             position: absolute;
@@ -514,12 +525,24 @@
     <section id="gallery" class="gallery">
         <h2 class="section-title">Glimpse Into the Abyss</h2>
         <div class="gallery-grid">
-            <div class="gallery-item"></div>
-            <div class="gallery-item"></div>
-            <div class="gallery-item"></div>
-            <div class="gallery-item"></div>
-            <div class="gallery-item"></div>
-            <div class="gallery-item"></div>
+            <div class="gallery-item">
+                <img src="images/bhTtglniELUE.png" alt="Epic Depths Screenshot 1">
+            </div>
+            <div class="gallery-item">
+                <img src="images/SLU1RtPgdf8M.png" alt="Epic Depths Screenshot 2">
+            </div>
+            <div class="gallery-item">
+                <img src="images/Gen31CEWsSna.png" alt="Epic Depths Screenshot 3">
+            </div>
+            <div class="gallery-item">
+                <img src="images/9Poo5ee7aZx7.png" alt="Epic Depths Screenshot 4">
+            </div>
+            <div class="gallery-item">
+                <img src="images/x8GscEe1tuMA.png" alt="Epic Depths Screenshot 5">
+            </div>
+            <div class="gallery-item">
+                <img src="images/bhTtglniELUE.png" alt="Epic Depths Screenshot 6">
+            </div>
         </div>
     </section>
 
