@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Epic Depths - Journey Into Darkness</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -12,7 +15,7 @@
         }
 
         body {
-            font-family: 'Georgia', serif;
+            font-family: 'Pixelify Sans', sans-serif;
             background: #000;
             color: #fff;
             overflow-x: hidden;
@@ -208,8 +211,18 @@
             width: 500px;
             height: 500px;
             animation: float 6s ease-in-out infinite;
-            background: url('images/9Poo5ee7aZx7.png') no-repeat center;
-            background-size: contain;
+        }
+
+        .hero-visual img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 80%;
+            max-height: 80%;
+            object-fit: contain;
+            z-index: 10;
+            filter: drop-shadow(0 0 30px rgba(138, 43, 226, 0.8));
         }
 
         .magic-circle {
@@ -461,6 +474,7 @@
             <a href="https://www.dropbox.com/scl/fi/yhg9vyoqxqjok8iefek7y/EpicDepths-Setup-1.0.0.rar?rlkey=v4otqy2b41jldtl5faff7j3as&st=e25gowxs&dl=1" class="cta-button">Begin Your Journey</a>
         </div>
         <div class="hero-visual">
+            <img src="images/9Poo5ee7aZx7.png" alt="Epic Depths Character">
             <div class="magic-circle"></div>
             <div class="magic-circle"></div>
             <div class="magic-circle"></div>
