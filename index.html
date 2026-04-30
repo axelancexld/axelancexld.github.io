@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MellyCraft SMP</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body data-lang="tr">
+
+<!-- ── HEADER ─────────────────────────────────────── -->
+<header class="header" id="header">
+    <div class="header-inner">
+        <a href="#" class="logo">
+            <img src="mellycraft.png" alt="MellyCraft">
+            <span>MellyCraft</span>
+        </a>
+        <nav class="nav">
+            <a href="#about"    data-i18n="nav.about">Hakkında</a>
+            <a href="#mods"     data-i18n="nav.mods">Modlar</a>
+            <a href="#features" data-i18n="nav.features">Özellikler</a>
+            <a href="#download" data-i18n="nav.download">İndir</a>
+        </nav>
+        <div class="header-actions">
+            <div class="lang-dropdown">
+                <button class="lang-selected" id="langToggle">
+                    <span id="langCurrent">EN</span>
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <div class="lang-menu" id="langMenu">
+                    <button class="lm-item active" data-lang="en">EN <span>English</span></button>
+                    <button class="lm-item" data-lang="de">DE <span>Deutsch</span></button>
+                    <button class="lm-item" data-lang="es">ES <span>Español</span></button>
+                    <button class="lm-item" data-lang="pt">PT <span>Português</span></button>
+                    <button class="lm-item" data-lang="nl">NL <span>Nederlands</span></button>
+                    <button class="lm-item" data-lang="tr">TR <span>Türkçe</span></button>
+                </div>
+            </div>
+            <a href="#download" class="btn-pill" data-i18n="nav.cta">İndir</a>
+        </div>
+    </div>
+</header>
+
+<!-- ── HERO ───────────────────────────────────────── -->
+<section class="hero" id="home">
+    <div class="hero-inner">
+
+        <div class="hero-left">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                <span data-i18n="hero.badge">Minecraft 26.1 &nbsp;·&nbsp; CurseForge Uyumlu</span>
+            </div>
+
+            <h1 class="hero-h">
+                <span data-i18n="hero.h1">Kawaii bir</span><br>
+                <em data-i18n="hero.h2">Minecraft</em><br>
+                <span data-i18n="hero.h3">deneyimi.</span>
+            </h1>
+
+            <p class="hero-p" data-i18n="hero.p">
+                Hello Kitty temalı, pastel renkli bir mod pack. Arkadaşlarınla oyna, inşa et, keşfet.
+            </p>
+
+            <div class="hero-ctas">
+                <a href="https://www.dropbox.com/scl/fi/zk6e7urzn2ckpttaql7su/MellyCraft-SMP.zip?rlkey=6aph1r4chgrdwanx20b680wb0&st=3lnk3ypj&dl=1"
+                   class="btn-download" download>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                        <polyline points="7 10 12 15 17 10"/>
+                        <line x1="12" y1="15" x2="12" y2="3"/>
+                    </svg>
+                    <span data-i18n="hero.cta">Ücretsiz İndir</span>
+                </a>
+                <a href="#about" class="btn-ghost" data-i18n="hero.ghost">Nasıl kurulur?</a>
+            </div>
+
+            <p class="hero-sub" data-i18n="hero.sub">Kart gerekmez. Ücretsiz. Sadece oyna.</p>
+
+            <div class="hero-stats">
+                <div class="stat">
+                    <strong>100+</strong>
+                    <span data-i18n="stat.mods">Mod</span>
+                </div>
+                <div class="stat-div"></div>
+                <div class="stat">
+                    <strong>233 KB</strong>
+                    <span data-i18n="stat.size">Boyut</span>
+                </div>
+                <div class="stat-div"></div>
+                <div class="stat">
+                    <strong>26.1</strong>
+                    <span>Minecraft</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-right">
+            <div class="mockup">
+                <div class="mockup-glow"></div>
+                <div class="mockup-card main-card">
+                    <img src="mellycraft.png" alt="MellyCraft">
+                    <div class="mc-label">MellyCraft SMP</div>
+                    <div class="mc-sub">Minecraft 26.1</div>
+                </div>
+                <div class="mockup-card side-card side-1">
+                    <div class="sc-row">
+                        <div class="sc-dot pink"></div>
+                        <span data-i18n="card.hello">Hello Kitty Teması</span>
+                    </div>
+                    <div class="sc-row">
+                        <div class="sc-dot purple"></div>
+                        <span data-i18n="card.kawaii">Kawaii Dekorlar</span>
+                    </div>
+                    <div class="sc-row">
+                        <div class="sc-dot blue"></div>
+                        <span data-i18n="card.smp">SMP Optimize</span>
+                    </div>
+                </div>
+                <div class="mockup-card side-card side-2">
+                    <div class="pill-stat">
+                        <span class="ps-num">100+</span>
+                        <span class="ps-lbl" data-i18n="stat.mods">Mod</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ── WORKS WITH ─────────────────────────────────── -->
+<section class="compat">
+    <div class="compat-inner">
+        <p class="compat-label" data-i18n="compat.label">UYUMLU</p>
+        <div class="compat-items">
+            <div class="compat-item">
+                <div class="ci-icon ci-cf">
+                    <!-- CurseForge logo -->
+                    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 6C4 4.895 4.895 4 6 4h20c1.105 0 2 .895 2 2v20c0 1.105-.895 2-2 2H6c-1.105 0-2-.895-2-2V6z" fill="#F16436"/>
+                        <path d="M9 10h9l-2 4h4l-9 9 2-6H9l0-7z" fill="white"/>
+                    </svg>
+                </div>
+                <div>
+                    <strong>CurseForge</strong>
+                    <span data-i18n="compat.cf">Mod Launcher</span>
+                </div>
+            </div>
+            <div class="compat-item">
+                <div class="ci-icon ci-mc">
+                    <!-- Minecraft Creeper face -->
+                    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="32" height="32" rx="6" fill="#5B8731"/>
+                        <rect x="11" y="10" width="4" height="4" fill="#1A1A1A"/>
+                        <rect x="17" y="10" width="4" height="4" fill="#1A1A1A"/>
+                        <rect x="13" y="14" width="6" height="2" fill="#1A1A1A"/>
+                        <rect x="11" y="16" width="4" height="4" fill="#1A1A1A"/>
+                        <rect x="17" y="16" width="4" height="4" fill="#1A1A1A"/>
+                    </svg>
+                </div>
+                <div>
+                    <strong>Minecraft</strong>
+                    <span>26.1</span>
+                </div>
+            </div>
+            <div class="compat-item">
+                <div class="ci-icon ci-win">
+                    <!-- Windows logo -->
+                    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="32" height="32" rx="6" fill="#0078D4"/>
+                        <rect x="7" y="7" width="8" height="8" rx="1" fill="white"/>
+                        <rect x="17" y="7" width="8" height="8" rx="1" fill="white"/>
+                        <rect x="7" y="17" width="8" height="8" rx="1" fill="white"/>
+                        <rect x="17" y="17" width="8" height="8" rx="1" fill="white"/>
+                    </svg>
+                </div>
+                <div>
+                    <strong>Windows</strong>
+                    <span data-i18n="compat.win">Uygulama</span>
+                </div>
+            </div>
+            <div class="compat-item">
+                <div class="ci-icon ci-mac">
+                    <!-- Apple logo -->
+                    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="32" height="32" rx="6" fill="#1C1C1E"/>
+                        <path d="M20.5 10.5c.8-1 1.3-2.3 1.2-3.5-1.2.1-2.6.8-3.4 1.8-.7.9-1.4 2.2-1.2 3.4 1.3.1 2.6-.6 3.4-1.7z" fill="white"/>
+                        <path d="M21.7 13c-1.8-.1-3.4 1-4.2 1-.9 0-2.2-1-3.6-.9-1.9.1-3.6 1.1-4.5 2.7-1.9 3.3-.5 8.2 1.4 10.9.9 1.3 2 2.8 3.5 2.7 1.4-.1 1.9-.9 3.6-.9 1.7 0 2.2.9 3.6.9 1.5 0 2.5-1.4 3.4-2.7.7-1 1-1.5 1.5-2.6-4-.1-4.9-5.9-.7-7.8-.8-1.4-2.2-2.3-4-2.3z" fill="white"/>
+                    </svg>
+                </div>
+                <div>
+                    <strong>macOS</strong>
+                    <span data-i18n="compat.mac">Uygulama</span>
+                </div>
+            </div>
+            <div class="compat-item">
+                <div class="ci-icon ci-multi">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                </div>
+                <div>
+                    <strong data-i18n="compat.players">2–10 Oyuncu</strong>
+                    <span>SMP</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── ABOUT ──────────────────────────────────────── -->
+<section class="about" id="about">
+    <div class="about-inner">
+        <div class="about-text">
+            <span class="section-tag" data-i18n="about.tag">Hakkında</span>
+            <h2 data-i18n="about.h">MellyCraft nedir?</h2>
+            <p data-i18n="about.p1">Hello Kitty ve kawaii dünyasından ilham alan bir Minecraft SMP mod paketidir. Pastel renkler, tatlı dekorasyonlar ve eğlenceli içeriklerle dolu bu pack, arkadaşlarınla birlikte oynamak için tasarlandı.</p>
+            <p data-i18n="about.p2">CurseForge ile tam uyumlu, kurulumu kolay ve hafif bir yapıya sahip. Sadece indir, import et ve oynamaya başla.</p>
+            <div class="tag-row">
+                <span>Hello Kitty</span>
+                <span>Kawaii</span>
+                <span>SMP</span>
+                <span>CurseForge</span>
+                <span>Minecraft 26.1</span>
+            </div>
+        </div>
+        <div class="about-visual">
+            <div class="av-bg"></div>
+            <img src="mellycraft.png" alt="MellyCraft">
+        </div>
+    </div>
+</section>
+
+<!-- ── MODS ────────────────────────────────────────── -->
+<section class="mods" id="mods">
+    <div class="mods-inner">
+        <div class="mods-head">
+            <span class="section-tag" data-i18n="mods.tag">Modlar</span>
+            <h2 data-i18n="mods.h">Pack'te neler var?</h2>
+            <p data-i18n="mods.sub">MellyCraft SMP içindeki 20+ mod ile tamamen yeni bir Minecraft deneyimi.</p>
+        </div>
+
+        <div class="mods-filter">
+            <button class="mf-btn active" data-filter="all" data-i18n="mods.all">Tümü</button>
+            <button class="mf-btn" data-filter="decoration" data-i18n="mods.cat.deco">Dekorasyon</button>
+            <button class="mf-btn" data-filter="adventure" data-i18n="mods.cat.adv">Macera</button>
+            <button class="mf-btn" data-filter="utility" data-i18n="mods.cat.util">Yardımcı</button>
+            <button class="mf-btn" data-filter="performance" data-i18n="mods.cat.perf">Performans</button>
+        </div>
+
+        <div class="mods-grid">
+
+            <div class="mod-card" data-cat="decoration">
+                <div class="mod-icon" style="background:#FF6B9D22;color:#FF6B9D">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                </div>
+                <div class="mod-info">
+                    <span class="mod-name">Kawaii Delight</span>
+                    <span class="mod-cat" data-i18n="mods.cat.deco">Dekorasyon</span>
+                </div>
+            </div>
+
+            <div class="mod-card" data-cat="decoration">
+                <div class="mod-icon" style="background:#F472B622;color:#F472B6">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                </div>
+                <div class="mod-info">
+                    <span class="mod-name">Pastel Furniture</span>
+                    <span class="mod-cat" data-i18n="mods.cat.deco">Dekorasyon</span>
+                </div>
+            </div>
+
+            <div class="mod-card" data-cat="decoration">
+                <div class="mod-icon" style="background:#C084FC22;color:#C084FC">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+                </div>
+                <div class="mod-info">
+                    <span class="mod-name">Cute Critters</span>
+                    <span class="mod-cat" data-i18n="mods.cat.deco">Dekorasyon</span>
+                </div>
+            </div>
+
+            <div class="mod-card" data-cat="decoration">
+                <div class="mod-icon" style="background:#60A5FA22;color:#60A5FA">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <div class="mod-info">
+                    <span class="mod-name">Floral Blocks</span>
+                    <span class="mod-cat" data-i18n="mods.cat.deco">Dekorasyon</span>
+                </div>
+            </div>
+
+            <div class="mod-card" data-cat="decoration">
+                <div class="mod-icon" style="background:#34D39922;color:#34D399">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V8z"/><line x1="6" y1="2" x2="6" y2="4"/><line x1="10" y1="2" x2="10" y2="4"/><line x1="14" y1="2" x2="14" y2="4"/></svg>
+                </div>
+                <div class="mod-info">
+                    <span class="mod-name">Sweet Bakery</span>
+                    <span class="mod-cat" data-i18n="mods.cat.deco">Dekorasyon</span>
+                </div>
+            </div>
+
+            <div class="mod-card" data-cat="decoration">
+                <div class="mod-icon" style="background:#FBBF2422;color:#FBBF24">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                </div>
+                <div class="mod-info">
+                    <span class="mod-name">Starlight Deco</span>
+                    <span class="mod-cat" data-i18n="mods.cat.deco">Dekorasyon</span>
+                </div>
+            </div>
+
+            <div class="mod-card" data-cat="adventure">
+                <div class="mod-icon" style="background:#F9731622;color:#F97316">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+                </div>
+                <div class="mod-info">
+                    <span class="mod-name">Better Dungeons</span>
+                    <span class="mod-cat" data-i18n="mods.cat.adv">Macera</span>
+                </div>
+            </div>
+
+            <div class="mod-card" data-cat="adventure">
+                <div class="mod-icon" style="background:#EF444422;color:#EF4444">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.5 10c-.83 0-1.5-.67-1.5-1.5v-5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5z"/><path d="M20.5 10H19V8.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/><path d="M9.5 14c.83 0 1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5S8 21.33 8 20.5v-5c0-.83.67-1.5 1.5-1.5z"/><path d="M3.5 14H5v1.5c0 .83-.67 1.5-1.5 1.5S2 16.33 2 15.5 2.67 14 3.5 14z"/><path d="M14 14.5c0-.83.67-1.5 1.5-1.5h5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5h-5c-.83 0-1.5-.67-1.5-1.5z"/><path d="M15.5 19H14v1.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5z"/><path d="M10 9.5C10 8.67 9.33 8 8.5 8h-5C2.67 8 2 8.67 2 9.5S2.67 11 3.5 11h5c.83 0 1.5-.67 1.5-1.5z"/><path d="M8.5 5H10V3.5C10 2.67 9.33 2 8.5 2S7 2.67 7 3.5 7.67 5 8.5 5z"/></svg>
+                </div>
+                <div class="mod-info">
+                    <span class="mod-name">Boss Expansion</span>
+                    <span class="mod-cat" data-i18n="mods.cat.adv">Macera</span>
+                </div>
+            </div>
+
+            <div class="mod-card" data-cat="adventure">
+                <div class="mod-icon" style="background:#8B5CF622;color:#8B5CF6">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+                </div>
+                <div class="mod-info">
+                    <span class="mod-name">Twilight Biomes</span>
+                    <span class="mod-cat" data-i18n="mods.cat.adv">Macera</span>
+                </div>
+            </div>
+
+            <div class="mod-card" data-cat="adventure">
+                <div class="mod-icon" style="background:#06B6D422;color:#06B6D4">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                </div>
+                <div class="mod-info">
+                    <span class="mod-name">Loot Overhaul</span>
+                    <span class="mod-cat" data-i18n="mods.cat.adv">Macera</span>
+                </div>
+            </div>
+
+            <div class="mod-card" data-cat="adventure">
+                <div class="mod-icon" style="background:#10B98122;color:#10B981">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 3h7l1 9 1-9h7"/><path d="M6 21a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="M18 21a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+                </div>
+                <div class="mod-info">
+                    <span class="mod-name">Farmer's Delight</span>
+                    <span class="mod-cat" data-i18n="mods.cat.adv">Macera</span>
+                </div>
+            </div>
+
+            <div class="mod-card" data-cat="utility">
+                <div class="mod-icon" style="background:#6366F122;color:#6366F1">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                </div>
+                <div class="mod-info">
+                    <span class="mod-name">Simple Voice Chat</span>
+                    <span class="mod-cat" data-i18n="mods.cat.util">Yardımcı</span>
+                </div>
+            </div>
+
+            <div class="mod-card" data-cat="utility">
+                <div class="mod-icon" style="background:#F472B622;color:#F472B6">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                </div>
+                <div class="mod-info">
+                    <span class="mod-name">Inventory Sorter</span>
+                    <span class="mod-cat" data-i18n="mods.cat.util">Yardımcı</span>
+                </div>
+            </div>
+
+            <div class="mod-card" data-cat="utility">
+                <div class="mod-icon" style="background:#FBBF2422;color:#FBBF24">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                </div>
+                <div class="mod-info">
+                    <span class="mod-name">Waystones</span>
+                    <span class="mod-cat" data-i18n="mods.cat.util">Yardımcı</span>
+                </div>
+            </div>
+
+            <div class="mod-card" data-cat="utility">
+                <div class="mod-icon" style="background:#34D39922;color:#34D399">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                </div>
+                <div class="mod-info">
+                    <span class="mod-name">JEI — Just Enough Items</span>
+                    <span class="mod-cat" data-i18n="mods.cat.util">Yardımcı</span>
+                </div>
+            </div>
+
+            <div class="mod-card" data-cat="utility">
+                <div class="mod-icon" style="background:#60A5FA22;color:#60A5FA">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                </div>
+                <div class="mod-info">
+                    <span class="mod-name">Xaero's Minimap</span>
+                    <span class="mod-cat" data-i18n="mods.cat.util">Yardımcı</span>
+                </div>
+            </div>
+
+            <div class="mod-card" data-cat="performance">
+                <div class="mod-icon" style="background:#EF444422;color:#EF4444">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                </div>
+                <div class="mod-info">
+                    <span class="mod-name">Sodium</span>
+                    <span class="mod-cat" data-i18n="mods.cat.perf">Performans</span>
+                </div>
+            </div>
+
+            <div class="mod-card" data-cat="performance">
+                <div class="mod-icon" style="background:#F9731622;color:#F97316">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                </div>
+                <div class="mod-info">
+                    <span class="mod-name">Lithium</span>
+                    <span class="mod-cat" data-i18n="mods.cat.perf">Performans</span>
+                </div>
+            </div>
+
+            <div class="mod-card" data-cat="performance">
+                <div class="mod-icon" style="background:#8B5CF622;color:#8B5CF6">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                </div>
+                <div class="mod-info">
+                    <span class="mod-name">Iris Shaders</span>
+                    <span class="mod-cat" data-i18n="mods.cat.perf">Performans</span>
+                </div>
+            </div>
+
+            <div class="mod-card" data-cat="performance">
+                <div class="mod-icon" style="background:#06B6D422;color:#06B6D4">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <div class="mod-info">
+                    <span class="mod-name">FerriteCore</span>
+                    <span class="mod-cat" data-i18n="mods.cat.perf">Performans</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="features" id="features">
+    <div class="features-inner">
+        <div class="features-head">
+            <span class="section-tag" data-i18n="feat.tag">Özellikler</span>
+            <h2 data-i18n="feat.h">Neden MellyCraft?</h2>
+        </div>
+        <div class="feat-grid">
+            <div class="feat-card fc-big">
+                <div class="fc-num">01</div>
+                <h3 data-i18n="feat.t1">Hello Kitty Teması</h3>
+                <p data-i18n="feat.d1">Kawaii bloklar, pastel renkler ve tatlı dekorasyonlarla dolu bir dünya. Her köşede sürpriz var.</p>
+                <div class="fc-art">
+                    <div class="fc-circle c1"></div>
+                    <div class="fc-circle c2"></div>
+                    <div class="fc-circle c3"></div>
+                </div>
+            </div>
+            <div class="feat-card">
+                <div class="fc-num">02</div>
+                <h3 data-i18n="feat.t2">Dekorasyon</h3>
+                <p data-i18n="feat.d2">Binlerce yeni eşya ile hayalindeki evi inşa et.</p>
+            </div>
+            <div class="feat-card">
+                <div class="fc-num">03</div>
+                <h3 data-i18n="feat.t3">Macera</h3>
+                <p data-i18n="feat.d3">Yeni dungeonlar, bosslar ve keşfedilecek alanlar.</p>
+            </div>
+            <div class="feat-card">
+                <div class="fc-num">04</div>
+                <h3 data-i18n="feat.t4">Multiplayer</h3>
+                <p data-i18n="feat.d4">SMP sunucuları için optimize edildi.</p>
+            </div>
+            <div class="feat-card">
+                <div class="fc-num">05</div>
+                <h3 data-i18n="feat.t5">Performans</h3>
+                <p data-i18n="feat.d5">Akıcı FPS ve stabil oyun deneyimi.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── DOWNLOAD ───────────────────────────────────── -->
+<section class="download" id="download">
+    <div class="dl-inner">
+        <div class="dl-left">
+            <span class="section-tag" data-i18n="dl.tag">İndir</span>
+            <h2 data-i18n="dl.h">Oynamaya hazır mısın?</h2>
+            <p data-i18n="dl.p">CurseForge Launcher ile birkaç tıkta kur ve oynamaya başla.</p>
+
+            <div class="dl-meta">
+                <div class="dm-item">
+                    <span class="dm-label" data-i18n="dl.ver">Versiyon</span>
+                    <span class="dm-val">26.1</span>
+                </div>
+                <div class="dm-item">
+                    <span class="dm-label" data-i18n="dl.sz">Boyut</span>
+                    <span class="dm-val">233 KB</span>
+                </div>
+                <div class="dm-item">
+                    <span class="dm-label">Launcher</span>
+                    <span class="dm-val">CurseForge</span>
+                </div>
+            </div>
+
+            <a href="https://www.dropbox.com/scl/fi/zk6e7urzn2ckpttaql7su/MellyCraft-SMP.zip?rlkey=6aph1r4chgrdwanx20b680wb0&st=3lnk3ypj&dl=1"
+               class="btn-download btn-dl-big" download>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                    <polyline points="7 10 12 15 17 10"/>
+                    <line x1="12" y1="15" x2="12" y2="3"/>
+                </svg>
+                <span data-i18n="dl.btn">MellyCraft'ı İndir</span>
+            </a>
+        </div>
+
+        <div class="dl-right">
+            <p class="steps-label" data-i18n="dl.stepsTitle">Kurulum</p>
+            <ol class="steps">
+                <li><span data-i18n="dl.s1">CurseForge Launcher'ı indir ve kur</span></li>
+                <li><span data-i18n="dl.s2">MellyCraft.zip dosyasını indir</span></li>
+                <li><span data-i18n="dl.s3">CurseForge'da "Import" butonuna tıkla</span></li>
+                <li><span data-i18n="dl.s4">Zip dosyasını seç ve bekle</span></li>
+                <li><span data-i18n="dl.s5">Oynamaya başla!</span></li>
+            </ol>
+        </div>
+    </div>
+</section>
+
+<!-- ── FOOTER ─────────────────────────────────────── -->
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <img src="mellycraft.png" alt="MellyCraft">
+            <span>MellyCraft SMP</span>
+        </div>
+        <nav class="footer-nav">
+            <a href="#about"    data-i18n="nav.about">Hakkında</a>
+            <a href="#features" data-i18n="nav.features">Özellikler</a>
+            <a href="#download" data-i18n="nav.download">İndir</a>
+        </nav>
+        <p class="footer-copy">&copy; 2026 MellyCraft SMP &nbsp;·&nbsp; <span data-i18n="footer.mc">Minecraft, Mojang Studios'un markasıdır.</span></p>
+    </div>
+</footer>
+
+<script src="translations.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
